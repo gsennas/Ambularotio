@@ -2,9 +2,9 @@ using Ambulatorio.Models;
 using Ambulatorio.Models.Enun;
 using System.Collections.Generic;
 
-namespace Ambulatorio.Repositorio
+namespace Ambulatorio.Repository
 {
-    public class SeddingService
+    public class SeedingService
     {
         public void Seeding()
         {

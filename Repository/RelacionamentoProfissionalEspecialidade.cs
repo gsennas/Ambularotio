@@ -1,4 +1,4 @@
-namespace Ambulatorio.Repositorio
+namespace Ambulatorio.Repository
 {
     public class RelacionamentoProfissionalEspecialidade
     {
