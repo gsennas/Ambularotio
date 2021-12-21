@@ -2,13 +2,13 @@
 
 
 
-#### Desenvolvendo projeto de controle de Ambulatório com scopo:
+#### Desenvolvendo projeto de controle de Ambulatório seguindo o scopo abaixo:
 
 - Cadastro Paciente (Cruds) ;
 
 - Cadastro de Profissional (Cruds);
 
-- Abertura de Atendimento (Cruds);
+- Abertura de Atendimento (Cruds) -> a ordenação será por ordem de chegada;
 
 - A solução será desenvolvida para ambiente console .net c#;
 
