@@ -33,5 +33,11 @@ namespace Ambulatorio.Models
             Estado = estado;
             Cep = cep;
         }
+        public override string ToString()
+        {
+            return Id + "-Name:" + Name + " Sexo: " + Sexo;
+        }
+
+        
     }
 }

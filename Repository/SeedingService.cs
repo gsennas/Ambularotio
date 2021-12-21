@@ -8,6 +8,7 @@ namespace Ambulatorio.Repository
     {
         public void Seeding()
         {
+
             ICollection<Especialidade> especialidades = new List<Especialidade>();
             Especialidade a = new Especialidade(1, "Clinica Médica", Conselho.CRM);
             Especialidade b = new Especialidade(2, "Ortopedia", Conselho.CRM);
@@ -28,18 +29,20 @@ namespace Ambulatorio.Repository
             especialidades.Add(h);
             especialidades.Add(i);
 
-            ICollection<Paciente> pacientes = new List<Paciente>();
+            
             Paciente pac1 = new Paciente(1, "Gláucio Senna", Sexo.Masculino, DateTime.Now, "Rua Jovem Viana", 158, "Casa",
                                         "Centro", "Rio das Ostras", "RJ", 28893452);
-            Paciente pac2 = new Paciente(1, "Lucas Bispo", Sexo.Masculino, DateTime.Now, "Rua  Viana", 300, "apt 203",
+            Paciente pac2 = new Paciente(2, "Lucas Bispo", Sexo.Masculino, DateTime.Now, "Rua  Viana", 300, "apt 203",
                                         "Novo Rio das Ostras", "Rio das Ostras", "RJ", 28893452);
-            pacientes.Add(pac1);
-            pacientes.Add(pac2);
+            
+            Context.AdcionarPaciente(pac1);
+            Context.AdcionarPaciente(pac2);
+                       
 
             ICollection<Profissional> profissionals = new List<Profissional>();
             Profissional pro1 = new Profissional(1, "Joice Bispo", Sexo.Feminino, DateTime.Now, "Rua  Viana", 300, "apt 203",
                                         "Novo Rio das Ostras", "Rio das Ostras", "RJ", 28893452, TipoProfissional.Medico);
-            Profissional pro2 = new Profissional(1, "Jeany XXXX", Sexo.Feminino, DateTime.Now, "Rua  Mauro Viana", 100, 
+            Profissional pro2 = new Profissional(1, "Jeany XXXX", Sexo.Feminino, DateTime.Now, "Rua  Mauro Viana", 100,
                                         "casa", "Marileia", "Macaé", "RJ", 28893200, TipoProfissional.Enfemeiro);
             profissionals.Add(pro1);
             profissionals.Add(pro2);
@@ -64,12 +67,6 @@ namespace Ambulatorio.Repository
             relacinamentos.Add(rel1);
             relacinamentos.Add(rel2);
             relacinamentos.Add(rel3);
-
-
-
-
         }
-
-
     }
 }

@@ -8,6 +8,8 @@ namespace Ambulatorio.Services
         {
             SeedingService seedingService = new SeedingService();
             seedingService.Seeding();
+            OptionService optionService = new OptionService();
+            optionService.Option();
         }
 
 
