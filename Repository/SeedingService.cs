@@ -48,12 +48,12 @@ namespace Ambulatorio.Repository
             profissionals.Add(pro2);
 
             ICollection<Telefone> telefones = new List<Telefone>();
-            Telefone t1 = new Telefone(1, 21, 983653100, TipoTelefone.Celular, 1, 0);
-            Telefone t2 = new Telefone(1, 22, 555555555, TipoTelefone.Residencial, 1, 0);
-            Telefone t3 = new Telefone(1, 21, 999999999, TipoTelefone.Celular, 2, 0);
-            Telefone t4 = new Telefone(1, 21, 888888888, TipoTelefone.Celular, 0, 1);
-            Telefone t5 = new Telefone(1, 21, 777777777, TipoTelefone.Comercial, 0, 1);
-            Telefone t6 = new Telefone(1, 21, 666666666, TipoTelefone.Comercial, 0, 2);
+            Telefone t1 = new Telefone(1, 21, 983653100, TipoTelefone.Celular, 1, null);
+            Telefone t2 = new Telefone(1, 22, 555555555, TipoTelefone.Residencial, 1, null);
+            Telefone t3 = new Telefone(1, 21, 999999999, TipoTelefone.Celular, 2, null);
+            Telefone t4 = new Telefone(1, 21, 888888888, TipoTelefone.Celular, null, 1);
+            Telefone t5 = new Telefone(1, 21, 777777777, TipoTelefone.Comercial, null, 1);
+            Telefone t6 = new Telefone(1, 21, 666666666, TipoTelefone.Comercial, null, 2);
             telefones.Add(t1);
             telefones.Add(t2);
             telefones.Add(t3);
